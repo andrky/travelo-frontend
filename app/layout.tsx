@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { montserrat, roboto } from './fonts';
-
+import { montserrat, roboto } from './utils/fonts';
 
 export const metadata: Metadata = {
 	title: 'Travelo',
@@ -14,8 +13,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={montserrat.className}>{children}</body>
+		<html lang="en" className={`${montserrat.variable} ${roboto.variable}`}>
+			<body>{children}</body>
 		</html>
 	);
 }
