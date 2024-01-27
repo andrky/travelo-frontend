@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { montserrat, roboto } from './utils/fonts';
+import Header from './components/Header/header';
 
 export const metadata: Metadata = {
 	title: 'Travelo',
@@ -14,7 +15,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${montserrat.variable} ${roboto.variable}`}>
-			<body>{children}</body>
+			<body>
+				<>
+					<Header />
+					{children}
+				</>
+			</body>
 		</html>
 	);
 }
