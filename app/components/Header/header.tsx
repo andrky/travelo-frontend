@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import Container from '../Container/container';
 import Search from './Search/search';
+import Nav from './Nav/nav';
 
 import traveloLogo from '../../../public/assets/travelo-logo-header.png';
 
@@ -13,6 +14,9 @@ const Header = () => {
 					<div className="flex">
 						<Image src={traveloLogo} alt="Travelo Logo" placeholder="blur" height="48" width="182" />
 						<Search />
+					</div>
+					<div className="flex">
+						<Nav />
 					</div>
 				</div>
 			</Container>
