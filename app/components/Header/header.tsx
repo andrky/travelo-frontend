@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
-import Container from '../Container/container';
+import Container from '../Container/layout';
 import Search from './Search/search';
 import Nav from './Nav/nav';
+import Button from '../Button/layout';
 
 import traveloLogo from '../../../public/assets/travelo-logo-header.png';
 
@@ -15,8 +16,11 @@ const Header = () => {
 						<Image src={traveloLogo} alt="Travelo Logo" placeholder="blur" height="48" width="182" />
 						<Search />
 					</div>
-					<div className="flex">
+					<div className="flex gap-5">
 						<Nav />
+            <Button className='w-[190px]'>
+              Masuk
+            </Button>
 					</div>
 				</div>
 			</Container>
