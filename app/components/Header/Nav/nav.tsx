@@ -1,21 +1,13 @@
-import Link from 'next/link';
+import NavItem from '../NavItem/navItem';
 
 const Nav = () => {
 	return (
 		// Nav
 		<nav className="flex items-center gap-5">
-			<Link href="/" className="text-heading-4 text-gray-70 font-robo font-bold">
-				Beranda
-			</Link>
-			<Link href="/" className="text-heading-4 text-gray-70 font-robo font-bold">
-				Kontak
-			</Link>
-			<Link href="/" className="text-heading-4 text-gray-70 font-robo font-bold">
-				Paket
-			</Link>
-			<Link href="/" className="text-heading-4 text-gray-70 font-robo font-bold">
-				Testimoni
-			</Link>
+			<NavItem href="/" label="Beranda"></NavItem>
+			<NavItem href="/" label="Kontak"></NavItem>
+			<NavItem href="/" label="Paket"></NavItem>
+			<NavItem href="/" label="Testimoni"></NavItem>
 		</nav>
 	);
 };
