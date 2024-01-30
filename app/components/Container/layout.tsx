@@ -1,13 +1,11 @@
 const Container = ({
-	children, // will be a page or nested layout
+	children,
+	size = 'xl', // will be a page or nested layout
 }: {
 	children: React.ReactNode;
+	size?: string;
 }) => {
-	return (
-    <div className="max-w-screen-xl mx-auto">
-      {children}
-    </div>
-  )
+	return <div className={`${size === 'xl' ? 'max-w-screen-xl' : 'max-w-screen-lg'} mx-auto`}>{children}</div>;
 };
 
 export default Container;

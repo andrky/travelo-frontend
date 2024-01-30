@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { montserrat, roboto } from './utils/fonts';
 import Header from './components/Header/header';
+import Footer from './components/Footer/footer';
 
 export const metadata: Metadata = {
 	title: 'Travelo',
@@ -19,6 +20,7 @@ export default function RootLayout({
 				<>
 					<Header />
 					{children}
+					<Footer />
 				</>
 			</body>
 		</html>
