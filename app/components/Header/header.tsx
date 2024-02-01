@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Container from '../Container/layout';
+import Container from '../Containers/Header/layout';
 import Search from './Search/search';
 import Nav from './Nav/nav';
 import Button from '../Button/layout';
@@ -18,9 +18,7 @@ const Header = () => {
 					</div>
 					<div className="flex gap-5">
 						<Nav />
-            <Button className='w-[190px]'>
-              Masuk
-            </Button>
+						<Button className="w-[190px]">Masuk</Button>
 					</div>
 				</div>
 			</Container>

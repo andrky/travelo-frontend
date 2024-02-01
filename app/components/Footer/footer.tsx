@@ -1,4 +1,4 @@
-import Container from '../Container/layout';
+import Container from '../Containers/Header/layout';
 import FooterInfo from './FooterInfo/footerInfo';
 
 import Image from 'next/image';
@@ -53,16 +53,7 @@ const Footer = () => {
 								},
 							]}
 						/>
-						<FooterInfo
-							title="Kontak"
-							content={[
-                'Jl. Kelinci 3 RT 6 RW 15',
-                'Kaliabang Tengah, Jawa Barat',
-                'Indonesia',
-                '(021)122222',
-                'kiw@gmail.com'
-              ]}
-						/>
+						<FooterInfo title="Kontak" content={['Jl. Kelinci 3 RT 6 RW 15', 'Kaliabang Tengah, Jawa Barat', 'Indonesia', '(021)122222', 'kiw@gmail.com']} />
 					</div>
 				</div>
 			</Container>
