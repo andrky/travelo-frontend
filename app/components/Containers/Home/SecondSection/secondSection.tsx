@@ -1,8 +1,9 @@
+
 const SecondSection = () => {
 	return (
-		<div>
-			<h1>Kiw</h1>
-		</div>
+		<section>
+
+    </section>
 	);
 };
 
