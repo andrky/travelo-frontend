@@ -1,4 +1,4 @@
-import Container from '../Containers/Header/layout';
+import Container from '../Containers/layout';
 import FooterInfo from './FooterInfo/footerInfo';
 
 import Image from 'next/image';
