@@ -1,9 +1,14 @@
+import styles from '../SecondSection/SecondSection.module.css';
+
+import Container from '../../layout';
 
 const SecondSection = () => {
 	return (
-		<section>
-
-    </section>
+		<section className={styles.section}>
+			<Container>
+				<h1>ghkgk</h1>
+			</Container>
+		</section>
 	);
 };
 
