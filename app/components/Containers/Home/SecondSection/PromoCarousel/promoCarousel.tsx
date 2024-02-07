@@ -1,3 +1,6 @@
+'use client';
+import PromoCard from './PromoCard/promoCard';
+
 import Carousel from 'react-multi-carousel';
 import Image from 'next/image';
 
@@ -38,11 +41,11 @@ const PromoCarousel = () => {
 					},
 				}}
 			>
-				<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
-				<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
-				<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
-				<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
-				<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
+				<PromoCard />
+				<PromoCard />
+				<PromoCard />
+				<PromoCard />
+				<PromoCard />
 			</Carousel>
 		</>
 	);
