@@ -10,7 +10,7 @@ import RightArrow from '../../../../../../public/assets/icons/right-arrow-rounde
 const PromoCarousel = () => {
 	return (
 		<>
-			<h3 className="text-heading-3 text-black font-mont font-bold pt-14 mb-4">Promo Liburan</h3>
+			<h3 className="text-heading-3 text-white font-mont font-bold pt-14 mb-4">Promo Liburan</h3>
 
 			<Carousel
 				className="py-5"

@@ -4,7 +4,7 @@ import Button from '@/app/components/Button/layout';
 
 const PromoCard = () => {
 	return (
-		<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[350px] flex">
+		<article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[350px] flex shadow-md">
 			<figure className="relative w-[212px] h-full">
 				<Image src="/assets/home/borobudur.png" alt="Borobudur" layout="fill" objectFit="cover" objectPosition="center" />
 			</figure>
