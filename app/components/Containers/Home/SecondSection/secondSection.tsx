@@ -5,6 +5,7 @@ import Container from '../../layout';
 import PromoCarousel from './PromoCarousel/promoCarousel';
 import Packages from './Packages/Packages';
 import Categories from './Categories/category';
+import Testimonials from './Testimonials/testimonials';
 
 const SecondSection = () => {
 	return (
@@ -12,7 +13,8 @@ const SecondSection = () => {
 			<Container>
 				<PromoCarousel />
 				<Packages />
-        <Categories />
+				<Categories />
+				<Testimonials />
 			</Container>
 		</section>
 	);
