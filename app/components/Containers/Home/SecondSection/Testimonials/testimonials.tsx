@@ -8,7 +8,7 @@ const Testimonials = () => {
 			<p className="text-heading-4 mb-4">Pendapat pelanggan tentang kami</p>
 
 			<div className='flex justify-between'>
-				{Array.from({ length: 5 }).map((_, index) => {
+				{Array.from({ length: 4 }).map((_, index) => {
 					return <TestimonialCard key={index} />;
 				})}
 			</div>
