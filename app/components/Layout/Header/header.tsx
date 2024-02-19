@@ -6,6 +6,7 @@ import Nav from './Nav/nav';
 import Button from '../../Button/layout';
 
 import traveloLogo from '../../../../public/assets/travelo-logo-header.png';
+import Link from 'next/link';
 
 const Header = () => {
 	return (
@@ -18,7 +19,9 @@ const Header = () => {
 					</div>
 					<div className="flex gap-5">
 						<Nav />
-						<Button className="w-[190px]">Masuk</Button>
+						<Link href="/login">
+							<Button className="w-[190px]">Masuk</Button>
+						</Link>
 					</div>
 				</div>
 			</Container>

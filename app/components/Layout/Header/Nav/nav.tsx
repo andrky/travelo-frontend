@@ -1,4 +1,5 @@
 import NavItem from '../NavItem/navItem';
+import Link from 'next/link';
 
 const Nav = () => {
 	return (
