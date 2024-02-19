@@ -1,6 +1,6 @@
 import styles from '../TopSection/TopSection.module.css';
 
-import Container from '../../layout';
+import Container from '../../containersLayout';
 import Button from '@/app/components/Button/layout';
 import InfoItem from './InfoItem/infoItem';
 

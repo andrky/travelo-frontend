@@ -1,9 +1,12 @@
 import HomeContainer from './components/Containers/Home/homeContainer';
+import HomeLayout from './components/Layout/homeLayout';
 
 const Home = () => {
 	return (
 		<>
-			<HomeContainer />
+			<HomeLayout>
+				<HomeContainer />
+			</HomeLayout>
 		</>
 	);
 };

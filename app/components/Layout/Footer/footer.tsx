@@ -1,10 +1,10 @@
-import Container from '../Containers/layout';
+import Container from '../../Containers/containersLayout';
 import FooterInfo from './FooterInfo/footerInfo';
 
 import Image from 'next/image';
 import styles from '../Footer/Footer.module.css';
 
-import traveloLogo from '../../../public/assets/travelo-logo-footer.png';
+import traveloLogo from '../../../../public/assets/travelo-logo-footer.png';
 
 const Footer = () => {
 	return (

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import searchIcon from '../../../../public/assets/icons/search-icon.svg';
+import searchIcon from '../../../../../public/assets/icons/search-icon.svg';
 
 const Search = () => {
 	return (
