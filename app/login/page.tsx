@@ -1,4 +1,4 @@
-import Login from '../components/Containers/Login/login';
+import Login from './Login/login';
 
 const LoginPage = () => {
 	return <Login />;

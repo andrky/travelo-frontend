@@ -1,5 +1,7 @@
+import Button from '../../components/Button/layout';
+import Input from '../Input/input';
+
 import Link from 'next/link';
-import Button from '../../Button/layout';
 import styles from './login.module.css';
 
 const Login = () => {
@@ -16,8 +18,13 @@ const Login = () => {
 				</div>
 
 				<form className="flex flex-col mt-8">
-					<input type="email" />
-					<input type="password" />
+					<Input label="E-mail" type="email" name="email" placeholder="Masukkan alamat e-mail" className="mb-6" />
+
+					<Input label="Kata sandi" type="password" name="password" placeholder="Masukkan kata sandi" />
+
+					<Link href="#" className="text-heading-5 text-blue-100 font-semibold mt-8 mb-4 hover:underline">
+						Lupa kata sandi ?
+					</Link>
 
 					<Button>Masuk</Button>
 				</form>
