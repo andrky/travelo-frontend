@@ -8,14 +8,14 @@ const config: Config = {
 				mont: ['var(--font-montserrat)'],
 				robo: ['var(--font-roboto)'],
 			},
-      fontSize: {
-        'heading-1': '48px',
-        'heading-2': '36px',
-        'heading-3': '24px',
-        'heading-4': '18px',
-        'heading-5': '14px',
-        'heading-6': '12px',
-      },
+			fontSize: {
+				'heading-1': '48px',
+				'heading-2': '36px',
+				'heading-3': '24px',
+				'heading-4': '18px',
+				'heading-5': '14px',
+				'heading-6': '12px',
+			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -34,6 +34,7 @@ const config: Config = {
 					primary: '#050D18',
 					secondary: '#50555D',
 				},
+				facebook: '#4267B2',
 				yellow: {
 					10: '#FDF5E8',
 					30: '#F9E3BB',
