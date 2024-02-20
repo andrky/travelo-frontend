@@ -6,14 +6,14 @@
 	background-image: url('/assets/login/login-bg.png');
 	background-position: left top;
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .formWrapper {
 	@apply flex-1 flex flex-col;
-
-  position: absolute;
+	position: absolute;
 	left: 60%;
-	top: 55%;
+	top: 50%;
 	transform: translateY(-50%);
 	min-width: 393px;
 }

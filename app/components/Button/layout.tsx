@@ -20,7 +20,10 @@ const Button = ({
 	variant?: 'primary' | 'google' | 'facebook';
 }) => {
 	return (
-		<button className={clsx(styles.button, className, fullWidth && styles.fullWidth, outlined && styles.outlined, variant === 'primary' && 'bg-blue-100', variant === 'google' && 'bg-red-100', variant === 'facebook' && 'bg-facebook')}>
+		<button
+			type={type}
+			className={clsx(styles.button, className, fullWidth && styles.fullWidth, outlined && styles.outlined, variant === 'primary' && 'bg-blue-100', variant === 'google' && 'bg-red-100', variant === 'facebook' && 'bg-facebook')}
+		>
 			{variant === 'facebook' && <FaFacebook className="text-white h-6 w-6 mr-2" />}
 
 			{variant === 'google' && <FaGoogle className="text-white h-6 w-6 mr-2" />}
