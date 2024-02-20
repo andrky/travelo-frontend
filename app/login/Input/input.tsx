@@ -14,10 +14,6 @@ const Input = ({ name, type, label, placeholder, className, register, errors, re
 	// Use state untuk merubah type
 	const [inputType, setInputType] = useState(type);
 
-	const isInputError = errors && errors[name];
-
-	const inputErrorHint = `${name}-input-error-hint`;
-
 	const handleEyeClick = () => {
 		// Merubah kondisi dari false menjadi true
 		setHidePassword((prevState) => !prevState);
@@ -36,26 +32,13 @@ const Input = ({ name, type, label, placeholder, className, register, errors, re
 		<label htmlFor={name} className={clsx(styles.label, className)}>
 			<div className="mb-3">{label}</div>
 
-			<input
-				{...register(name, {
-					required,
-					pattern,
-				})}
-				formNoValidate
-				type={inputType}
-				id={name}
-				placeholder={placeholder}
-				className={styles.input}
-				aria-describedby={inputErrorHint}
-			/>
+			<input type={inputType} name={name} id={name} placeholder={placeholder} className={styles.input} />
 
 			{type === 'password' ? (
-				<button type="button" className={clsx(styles.eye, isInputError && styles.eyeError)} onClick={handleEyeClick}>
+				<button type="button" className={styles.eye} onClick={handleEyeClick}>
 					{hidePassword ? <FaEyeSlash className="h-6 w-6 text-gray-100" /> : <FaEye className="h-6 w-6 text-gray-100" />}
 				</button>
 			) : null}
-
-			{isInputError ? <span className="text-xs text-red-100 mt-1 ml-3">{errors[name].message}</span> : null}
 		</label>
 	);
 };

@@ -1,3 +1,5 @@
+'use client'
+
 import Button from '../../components/Button/layout';
 import Input from '../Input/input';
 import { useComponentLogic } from './hooks';

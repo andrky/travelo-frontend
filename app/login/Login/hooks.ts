@@ -1,3 +1,5 @@
+'use client'
+
 import type { FormInputs } from './interfaces';
 import { SubmitHandler } from 'react-hook-form';
 
