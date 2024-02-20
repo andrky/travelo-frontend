@@ -14,7 +14,7 @@ const TopSection = () => {
 
 						<p className="text-heading-3 text-gray-70 w-[526px] mb-7">Jelajahi dunia yang indah dengan satu sentuhan dengan pesan tiket di Travelo kamu akan mendapatkan pelayanan terbaik untuk wisata liburanmu kemana saja dan kapan saja</p>
 
-						<Button>Lihat Paket</Button>
+						<Button className="w-[190px]">Lihat Paket</Button>
 					</div>
 
 					<div className="flex gap-40 mx-auto">

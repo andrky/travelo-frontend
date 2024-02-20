@@ -1,10 +1,12 @@
 import Button from '../../components/Button/layout';
 import Input from '../Input/input';
+import { useComponentLogic } from './hooks';
 
 import Link from 'next/link';
 import styles from './login.module.css';
 
 const Login = () => {
+	const { register, handleSubmit, onSubmit, errors } = useComponentLogic();
 	return (
 		<section className={styles.section}>
 			<div className={styles.formWrapper}>
@@ -17,7 +19,7 @@ const Login = () => {
 					</Link>
 				</div>
 
-				<form className="flex flex-col mt-8">
+				<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-8">
 					<Input label="E-mail" type="email" name="email" placeholder="Masukkan alamat e-mail" className="mb-6" />
 
 					<Input label="Kata sandi" type="password" name="password" placeholder="Masukkan kata sandi" />
